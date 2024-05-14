@@ -1,1 +1,71 @@
-hola mundo 2
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="new.css">
+
+    <style>
+
+        .block {
+            width: 500px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .values {
+            display: inline-block;
+            width:170px;
+            height:150px;
+            /*border: 1px solid red;*/
+            padding: 10px;
+        }
+        .buttons {
+            vertical-align:top;
+            display: inline-block;
+            width:160px;
+            height:150px;
+            /*border: 1px solid green;*/
+            padding-top: 35px;
+        }
+
+        .err{
+            color: red;
+            background-color: #79FFE1;
+        }
+
+    </style>
+</head>
+<body>
+
+<form id="calc" action="#" method="post">
+    <div class="block">
+
+        <div class="values">
+            <label for="valor_1">Valor 1:</label>
+            <input type="text" id="valor_1" name="valor_1" value="">
+            <br />
+            <label for="valor_2">Valor 2:</label>
+            <input type="text" id="valor_2" name="valor_2" value="">
+            <br />
+            <label for="valor_3">Resultado:</label>
+            <input type="text" id="valor_3" name="valor_3" value="">
+        </div>
+        <div class="buttons">
+            <input type="button" id="suma" value="+" title="Suma">
+            <input type="button" id="rest" value="-" title="Resta">
+            <input type="button" id="pote" value="**" title="Potencia">
+            <br />
+            <input type="button" id="mult" value="*" title="Multiplicación">
+            <input type="button" id="divi" value="/" title="División">
+            <br />
+            <input type="button" id="igual" value="=" style="width: 65px; height: 75px" title="Igual: Calculo del resultado">
+        </div>
+    </div>
+    <div class="err" id="err"></div>
+</form>
+
+
+<script src="index.js"></script>
+</body>
+</html>
